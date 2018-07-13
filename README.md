@@ -27,6 +27,11 @@ jc <options> <main file>
   Print this help
 ```
 
+## Author(s)
+
+Stefan Bosse
+
+
 ## Description
 
 This tool can be used to merge multiple single JS files (aka. modules) in one bundled file. This file can be either executed standalone or can be embedded in another JS application using `require('bundle')`.
