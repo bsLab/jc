@@ -93,8 +93,10 @@ File C (in lib)
 
 ..
 module.exports = { .. }
+```
 
 
+```
 Build
 -----
 
