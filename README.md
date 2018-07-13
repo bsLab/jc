@@ -50,13 +50,15 @@ If the `-lib` options is set, a bundled library is created (passing the module e
 
 This function is provided by the compiler and is the operational equivalent *require* function used in *node.js* to include (import) modules. In all modules to be included all *require* calls should be replaced by respective *Require* calls. In contrast to *require* no path qualifiers has to be added. E.g., `require('./../lib/file')` &rArr; `Require('lib/file')`. The *Require* function embeds the module code in the bundled target file. Without minification, the code can be easily found in the bundled file:
 
-```
-Source file lib/X.js:
+```javascript
+Source file lib/X.js
+--------------------
 
 function f () {..}; 
 module.exports = { f:f }
 
-Bundled file:
+Bundled file
+------------
 
 BundleModuleCode['lib/X']=function (module,exports,global,process){
   function f() {..};
@@ -70,27 +72,34 @@ The first time a module is imported (i.e., building the bundled file) the module
 
 
 ```javascript
-File A (main):
+File A (main)
+-------------
 
 var fs = Require('fs')
 var B = Require('B')
 var C = Require('C')
 
 
-File B (in lib):
+File B (in lib)
+---------------
 
 var path = Require('path')
 ..
 module.exports = { x:x,y:y, ..}
 
 
-File C (in lib):
+File C (in lib)
+---------------
+
 ..
 module.exports = { .. }
 
 
-Build:
-# jc -top /home/user/proj/X -I /home/user/proj/X/lib -lib A.js
+Build
+-----
+
+# jc -top /home/user/proj/X -I /home/user/proj/X/lib A.js -o myApp
+# myApp
 ```
 
 
