@@ -62,7 +62,7 @@ Bundled file
 
 BundleModuleCode['lib/X']=function (module,exports,global,process){
   function f() {..};
-  modules.exports = { f:f }
+  module.exports = { f:f }
 } 
 ```
 
