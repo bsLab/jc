@@ -69,17 +69,20 @@ var fs = Require('fs')
 var B = Require('B')
 var C = Require('C')
 
-File B:
+
+File B (in lib):
 
 var path = Require('path')
 ..
 module.exports = { x:x,y:y, ..}
 
-File C:
+
+File C (in lib):
 ..
 module.exports = { .. }
 
 
+Build:
 # jc -top /home/user/proj/X -I /home/user/proj/X/lib -lib A.js
 ```
 
