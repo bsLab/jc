@@ -39,10 +39,24 @@ In contrast to *uglify*, *jc* creates a bundled code file by using a main file p
 
 ## Functions
 
-`Require(<module>)`
+**`Require(<module>)`**
 
 
-The function is the operational equivalent *require* function used in *node.js* to include (import) modules. In all modules to be included all *require* calls should be replaced by respective *Require* calls. In contrast to *require* no path qualifiers has to be added. E.g., `require('./../lib/file')` &rArr; `Require('lib/file')`.
+The function is the operational equivalent *require* function used in *node.js* to include (import) modules. In all modules to be included all *require* calls should be replaced by respective *Require* calls. In contrast to *require* no path qualifiers has to be added. E.g., `require('./../lib/file')` &rArr; `Require('lib/file')`. The *Require* function embed the module code in the bundled target file. Without minification, the code can be easily found in the bundled file:
+
+```
+Source file lib/X.js:
+
+function f () {..}; 
+module.exports = { f:f }
+
+Bundled file:
+
+BundleModuleCode['lib/X']=function (module,exports,global,process){
+  function f() {..};
+  modules.exports = { f:f }
+} 
+```
 
 
 ## Example
@@ -58,13 +72,12 @@ var C = Require('C')
 File B:
 
 var path = Require('path')
---
+..
 module.exports = { x:x,y:y, ..}
 
 File C:
 ..
 module.exports = { .. }
-
 
 
 # jc -top /home/user/proj/X -I /home/user/proj/X/lib -lib A.js
