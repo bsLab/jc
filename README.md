@@ -48,7 +48,7 @@ If the `-lib` options is set, a bundled library is created (passing the module e
 **`Require(<module>)`**
 
 
-This function is provided by the compiler and is the operational equivalent *require* function used in *node.js* to include (import) modules. In all modules to be included all *require* calls should be replaced by respective *Require* calls. In contrast to *require* no path qualifiers has to be added. E.g., `require('./../lib/file')` &rArr; `Require('lib/file')`. The *Require* function embed the module code in the bundled target file. Without minification, the code can be easily found in the bundled file:
+This function is provided by the compiler and is the operational equivalent *require* function used in *node.js* to include (import) modules. In all modules to be included all *require* calls should be replaced by respective *Require* calls. In contrast to *require* no path qualifiers has to be added. E.g., `require('./../lib/file')` &rArr; `Require('lib/file')`. The *Require* function embeds the module code in the bundled target file. Without minification, the code can be easily found in the bundled file:
 
 ```
 Source file lib/X.js:
@@ -64,6 +64,7 @@ BundleModuleCode['lib/X']=function (module,exports,global,process){
 } 
 ```
 
+The first time a module is imported (i.e., building the bundled file) the module file is read from the file system (e.g., by using *require*) and embedded in the program. The second time (or the first time using the final bundled file) the module is opened by the embedded code.
 
 ## Example
 
