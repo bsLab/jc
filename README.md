@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-JavaScript Make Tool
+**JavaScript Make Tool**
 
 ```
 jc <options> <main file>
@@ -10,7 +10,7 @@ jc <options> <main file>
 -o <file>
  Output file of bundled program or library file
 -lib
-  Create a library that can be loaded by require
+  Create a library that can be loaded with require
 -min
   Minify code
 -nobundle
