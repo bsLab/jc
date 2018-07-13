@@ -40,7 +40,7 @@ The *jc* tool includes a code minifier (adapted from *uglify*).
 
 In contrast to *uglify*, *jc* creates a bundled code file by using a main file passed as the only file to the make tool. *Jc* creates a bundled program or library by *executing* the code! Additional files to be included in the bundled file must be added by using special functions (Require). The module files are searched based on the current working directory path, a specified top level path, and additional include paths. Include paths can be relative to the current working directory.
 
-If the `-lib` options is set, a bundled library is created (passing the module export of the main file to the library file). Otherwise, a standalone JS executable file is created that can be directly called on command line (assuming `node` is installed on the system).
+If the `-lib` options is set, a bundled library is created (passing the module export of the main file to the library file). Otherwise, a standalone JS executable file is created that can be directly executed from command line (assuming `node` is installed on the system).
 
 
 ## Functions
