@@ -39,8 +39,11 @@ In contrast to *uglify*, *jc* creates a bundled code file by using a main file p
 
 ## Functions
 
-Require(*module*)
-: The function is the operational equivalent *require* function used in *node.js* to include (import) modules. In all modules to be included all *require* calls should be replaced by respective *Require* calls. In contrast to *require* no path qualifiers has to be added. E.g., `require('./../lib/file')` &rArr; `Require('lib/file')`.
+`Require(<module>)`
+
+
+The function is the operational equivalent *require* function used in *node.js* to include (import) modules. In all modules to be included all *require* calls should be replaced by respective *Require* calls. In contrast to *require* no path qualifiers has to be added. E.g., `require('./../lib/file')` &rArr; `Require('lib/file')`.
+
 
 ## Example
 
@@ -48,7 +51,7 @@ Require(*module*)
 ```javascript
 File A (main):
 
-var fs = Require('fs)
+var fs = Require('fs')
 var B = Require('B')
 var C = Require('C')
 
