@@ -99,6 +99,22 @@ Build
 -----
 
 # jc -top /home/user/proj/X -I /home/user/proj/X/lib A.js -o myApp
+[JC] JavaScript Make Tool (1.7.4, Dr. Stefan Bosse)
+[JC] Main file is: A.js
+[JC] Require: os/base64 [Builtin]
+[JC] Include paths: /home/user/proj/X, /home/user/proj/X/lib, /tmp, .
+[JC] Making A.js
+[JC] Require: A.js [File]
+[JC]  Require: fs [Core]
+[JC]  Require: B [File]
+[JC]   Require: path [Core]
+[JC]  Require: C [File]
+[JC] + os/base64 [3937]
+[JC] + /home/user/proj/X/A.js [65]
+[JC] + /home/user/proj/X/lib/B.js [90]
+[JC] + /home/user/proj/X/lib/C.js [25]
+[JC] Writing bundled JS file myApp [7547]
+
 # myApp
 ```
 
