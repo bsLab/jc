@@ -72,7 +72,7 @@ Project build options can be provided by command line arguments or by providing 
 Although there is no traditional source code compiling the source code must be valid JS syntax. Basically ECMAScript 5 is supported, but this depends on the JS VM used to execute *jc* and the final program. Note that the built-in minifier performs syntax checking and only supports ECMAScript 5 (and versions below).
 
 
-## Functions
+## API Functions
 
 **`Require(<module>)`**
 
@@ -104,10 +104,10 @@ The first time a module is imported (i.e., building the bundled file) the module
 This function only embeds the code of the module, but does not import (evaluate) the code. 
 
 
-**`_FileEmbedded(<path>,<format>)`**
+**`FileEmbedded(<path>,<format>)`**
 
 
-This function can be used to embed auxiliary files (configuration, images, text, ..) in the bundled file. The function returns the content of the file (in the optional specified format, e.g., "utf8").
+This function can be used to embed auxiliary files (configuration, images, text, ..) in the bundled file. The function returns the content of the file (in the optionally specified format, e.g., "utf8").
 
 **`Import([<modules>])`**
 
