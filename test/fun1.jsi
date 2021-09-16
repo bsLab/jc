@@ -1,0 +1,5 @@
+function fo(@a,@b,..);
+function f1(c:complex) -> number;
+function f3(a:{} []) {
+  return a[0];
+}

@@ -1,0 +1,5 @@
+var x,y,z:string,
+    i:number;
+
+x:number;
+label: for(;;){}

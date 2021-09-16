@@ -1,0 +1,9 @@
+class myClass = {
+  options,
+  square: function (x:n) -> x,
+  init:method (n:number),
+  start:method ()
+};
+
+constructor myClass(@options) -> myClass;
+myClass: constructor (@options) -> myClass;

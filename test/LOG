@@ -1,0 +1,513 @@
+---
+{ type: 7,
+  value: '{',
+  lineNumber: 1,
+  lineStart: 0,
+  start: 16,
+  end: 17 }
+--->
+---
+{ type: 3,
+  value: 'options',
+  lineNumber: 2,
+  lineStart: 18,
+  start: 20,
+  end: 27 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: [] }
+--->
+---
+{ type: 7,
+  value: ',',
+  lineNumber: 2,
+  lineStart: 18,
+  start: 27,
+  end: 28 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 9 },
+     end: { line: 2, column: 9 } },
+  type: 'Type',
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'options' },
+  flag: 'TypeIdentifier' }
+[1]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' } ] }
+--->
+---
+{ type: 3,
+  value: 'square',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 31,
+  end: 37 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' } ] }
+--->
+---
+{ type: 7,
+  value: ':',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 37,
+  end: 38 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 3, column: 8 },
+     end: { line: 3, column: 8 } },
+  type: 'Type',
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'square' },
+  flag: 'TypeIdentifier' }
+[1]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' } ] }
+--->
+---
+{ type: 4,
+  value: 'function',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 39,
+  end: 47 }
+--->
+---
+{ type: 3,
+  value: 'n',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 51,
+  end: 52 }
+--->
+---
+{ type: 7,
+  value: ')',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 52,
+  end: 53 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 3, column: 23 },
+     end: { line: 3, column: 23 } },
+  type: 'Type',
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'n' },
+  flag: 'TypeIdentifier' }
+--->
+---
+{ type: 3,
+  value: 'x',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 57,
+  end: 58 }
+--->
+---
+{ type: 7,
+  value: ',',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 58,
+  end: 59 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 3, column: 29 },
+     end: { line: 3, column: 29 } },
+  type: 'Type',
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'x' },
+  flag: 'TypeIdentifier' }
+--->
+---
+{ type: 7,
+  value: ',',
+  lineNumber: 3,
+  lineStart: 29,
+  start: 58,
+  end: 59 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 3, column: 10 },
+     end: { line: 3, column: 29 } },
+  type: 'TypeExpression',
+  expression: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'FunctionType',
+     params: [ [Object] ],
+     defaults: [],
+     generator: false,
+     expression: false,
+     flag: 'TypeFunction',
+     Type: 
+      { loc: [Object],
+        type: 'Type',
+        id: [Object],
+        flag: 'TypeIdentifier' } },
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'square' } }
+[1]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] } ] }
+--->
+---
+{ type: 3,
+  value: 'init',
+  lineNumber: 4,
+  lineStart: 60,
+  start: 62,
+  end: 66 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] } ] }
+--->
+---
+{ type: 7,
+  value: ':',
+  lineNumber: 4,
+  lineStart: 60,
+  start: 66,
+  end: 67 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 4, column: 6 },
+     end: { line: 4, column: 6 } },
+  type: 'Type',
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'init' },
+  flag: 'TypeIdentifier' }
+[1]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' } ] }
+--->
+---
+{ type: 4,
+  value: 'method',
+  lineNumber: 4,
+  lineStart: 60,
+  start: 67,
+  end: 73 }
+--->
+---
+{ type: 3,
+  value: 'number',
+  lineNumber: 4,
+  lineStart: 60,
+  start: 77,
+  end: 83 }
+--->
+---
+{ type: 7,
+  value: ')',
+  lineNumber: 4,
+  lineStart: 60,
+  start: 83,
+  end: 84 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 4, column: 23 },
+     end: { line: 4, column: 23 } },
+  type: 'Type',
+  name: 'number',
+  flag: 'TypeBuiltin' }
+--->
+---
+{ type: 7,
+  value: ',',
+  lineNumber: 4,
+  lineStart: 60,
+  start: 84,
+  end: 85 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 4, column: 7 },
+     end: { line: 4, column: 24 } },
+  type: 'TypeExpression',
+  expression: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'FunctionType',
+     params: [ [Object] ],
+     defaults: [],
+     generator: false,
+     expression: false,
+     flag: 'TypeMethod' },
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'init' } }
+[1]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] } ] }
+--->
+---
+{ type: 3,
+  value: 'start',
+  lineNumber: 5,
+  lineStart: 86,
+  start: 88,
+  end: 93 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] } ] }
+--->
+---
+{ type: 7,
+  value: ':',
+  lineNumber: 5,
+  lineStart: 86,
+  start: 93,
+  end: 94 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 5, column: 7 },
+     end: { line: 5, column: 7 } },
+  type: 'Type',
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'start' },
+  flag: 'TypeIdentifier' }
+[1]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' } ] }
+--->
+---
+{ type: 4,
+  value: 'method',
+  lineNumber: 5,
+  lineStart: 86,
+  start: 94,
+  end: 100 }
+--->
+---
+{ type: 7,
+  value: '}',
+  lineNumber: 6,
+  lineStart: 104,
+  start: 104,
+  end: 105 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 5, column: 8 },
+     end: { line: 5, column: 17 } },
+  type: 'TypeExpression',
+  expression: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'FunctionType',
+     params: [],
+     defaults: [],
+     generator: false,
+     expression: false,
+     flag: 'TypeMethod' },
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'start' } }
+[1]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] } ] }
+--->
+---
+{ type: 7,
+  value: ';',
+  lineNumber: 6,
+  lineStart: 104,
+  start: 105,
+  end: 106 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 2, column: 2 },
+     end: { line: 2, column: 2 } },
+  type: 'ClassType',
+  elements: 
+   [ { loc: [Object],
+       type: 'Type',
+       id: [Object],
+       flag: 'TypeIdentifier' },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] },
+     { loc: [Object],
+       type: 'TypeExpression',
+       expression: [Object],
+       id: [Object] } ] }
+--->
+---
+{ type: 3,
+  value: 'myClass',
+  lineNumber: 8,
+  lineStart: 108,
+  start: 141,
+  end: 148 }
+--->
+---
+{ type: 7,
+  value: ';',
+  lineNumber: 8,
+  lineStart: 108,
+  start: 148,
+  end: 149 }
+[0]{ loc: 
+   SourceLocation {
+     start: Position { line: 8, column: 40 },
+     end: { line: 8, column: 40 } },
+  type: 'Type',
+  id: 
+   { loc: SourceLocation { start: [Object], end: [Object] },
+     type: 'Identifier',
+     name: 'myClass' },
+  flag: 'TypeIdentifier' }
+--->

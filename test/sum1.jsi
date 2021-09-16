@@ -1,0 +1,5 @@
+type S = 
+  S1 {tag='S.S1',x1:number,y1:number} |
+  S2 {tag:string,x2:number,y2:number} |
+  S3 {tag:string,x3:number,y3:number} |
+  S4 {tag=1004,x3:number,y3:number} 
