@@ -1,0 +1,81 @@
+FILES:
+
+
+--- COM ---
+
+@ + com/compat.js
+@ + com/evalx.js
+@ + com/err.js
+@ + com/io.js
+@ + com/path.js
+@ + com/sprintf.js
+
+--- MAKE ---
+@ + make/makelib.js
+@ + make/makeapp.js
+@ + make/makeApp.js
+@ + make/module.js
+
+
+--- PARSER ---
+
+@ + parser/estprima.js
+@ + parser/esvalidate.js
+
+--- PRINTER ---
+@ + printer/estcodegen.js
+@ + printer/estraverse.js
+@ + printer/source-map.js
+
+--- LIB ----
+@ analyzer/analyzer.js
+@ generator/generator.js
+@ transform/transform.js
+@ types/types.js
+
+--- MINIFY ----
+@ minify/lib/ast.js
+@ minify/lib/compress.js
+@ minify/lib/minify.js
+@ minify/lib/output.js
+@ minify/lib/parse.js
+@ minify/lib/scope.js
+@ minify/lib/sourcemap.js
+@ minify/lib/transform.js
+@ minify/lib/utils.js
+@ minify/tools/minify.js
+
+--- DOC ----
+@ + doc/doc.js
+
+
+
+@ + os/base64.js
+
+--- TOP ---
+
+@ + top/makeapp
+@ + top/jsc.js
+@ + top/jc.js
+@ + top/module.js
+@ + top/runapp
+
+
+@ bug-report
+
+
+
+PROJECT:
+  PROJ_PATH $HOME/proj/jsc/
+  SRC_PATH $PROJ_PATH/src/
+  OBJ_PATH $PROJ_PATH/build
+  VUM_PATH
+  
+COMMANDS:
+  OPEN ALL
+  CLOSE ALL
+  BUILD ALL
+  BUILD CLEAN
+  BUILD INSTALL
+  BUILD VERSION
+

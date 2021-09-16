@@ -1,0 +1,56 @@
+#!/bin/bash
+
+TOP=/home/sbosse/proj/jsc
+APP=jsmin
+MAIN=$TOP/src/min/jsmin.c
+
+
+INSTALLDIR=/opt/jsc
+MV=mv
+RM=rm
+CHMOD=chmod
+CAT=cat
+ECHO=echo
+CC=gcc
+INSTALL=$TOP/tools/install.sh
+
+if [ $# = 0 ]
+then
+    echo "Usage: build <targets>"
+    echo "Targets: all app clean install"
+    exit 1
+fi
+
+check ()
+{
+    if [ $? != 0 ]
+    then
+        echo "Abort due to errors building target."
+        exit 1
+    fi
+}
+
+makeapp()
+{
+  $CC -o $APP -O2 $MAIN
+}
+
+for TARGET in $@
+do
+    echo "Building target [$TARGET] ..."
+    case $TARGET in
+        all)
+            makeapp
+            ;;
+        clean)  
+            $RM -f $APP
+            ;;
+        install)
+            $INSTALL -d $INSTALLDIR
+            $INSTALL -d $INSTALLDIR/bin
+            $INSTALL -C $APP $INSTALLDIR/bin
+            check
+            ;;
+		
+    esac
+done
