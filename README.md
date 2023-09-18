@@ -15,4 +15,4 @@ http://git.edu-9.de/sbosse/jc
 
 Details can be found in:
 
-[doc/jc/README.md]
+[README](doc/jc/README.md)
