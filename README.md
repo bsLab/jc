@@ -11,4 +11,6 @@ http://git.edu-9.de/sbosse/jc
 <a href="https://www.battleforlibraries.com/">Fight For the Future</a>
 ---
 
-doc/jc/README.md
+Details can be found in:
+
+[doc/jc/README.md]
